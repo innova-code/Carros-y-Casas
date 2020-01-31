@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Empresas JNA | Inicio de Sesión y Registro</title>
+	<title>Empresas JNA | Reiniciar Contraseña</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="https://kit.fontawesome.com/9aa0e1d6d6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="/css/main.css">
@@ -48,62 +48,21 @@
 			    	<a class="navbar-item" href="#">Contacto</a>
 		    	</div>
 			</div>
-		</nav>
+		</nav>	
 	</header>
-	<div id="form-section">
-		<div class="container">
-			<div class="columns">
-				<div class="column is-12-mobible is-6-tablet is-5-desktop">
-					<h3>Iniciar sesión</h3>
-					<form action="" key="1" class="login-form" v-if="activetab === 1">
-	    				<div class="field">
-							<label class="label" for="username">Usuario</label>
-							<div class="control">
-						    	<input class="input" id="username" type="text" placeholder="Usuario o correo">
-							</div>
-						</div>
-						<div class="field">
-							<label class="label" for="password">Contraseña</label>
-							<div class="control">
-						    	<input class="input" id="password" type="password" placeholder="Contraseña">
-							</div>
-						</div>
-						<div class="buttons">
-							<div class="control">
-							    <label class="checkbox">
-							    	<input type="checkbox">
-							    	Recuerdame
-							    </label>
-							</div>
-							<div class="control">
-							    <a href="/pages/reset-password.html" class="forgot-btn">Olvide mi contraseña</a>
-							</div>
-						</div>
-						<div class="field btn-login">
-							<button class="button is-primary">
-								Iniciar Sesión
-							</button>
-						</div>
-						<hr>
-						<div class="other-options">
-							<h5>Iniciar sesión con...</h5>
-							<div class="buttons">
-								<a href="#" class="facebook-btn">
-									<i class="fab fa-facebook-f"></i>
-									Facebook
-								</a>
-								<a href="#" class="google-btn">
-	        						<img src="/img/google.svg" alt="">
-									Google
-								</a>
-							</div>
-						</div>
-	    			</form>
+	<div id="wrapper">
+		<div id="sale" class="container is-fluid section">
+			<div class="columns is-vcentered">
+				<div class="column is-12-mobile is-table-6 is-7-desktop text-center">
+					<h1>Nuestra plataforma a tu disposición</h1>
+					<h3>¿Es usted una persona particular o tiene una empresa?</h3>
+					<h3>Registrate y publica tus artículos totalmente gratis y conectar al instante con miles de compradores interesados en hacer negocios contigo.</h3>
+					<h2>¿Qué puedes vender?</h2>
+					<h3>Carros, Casas, Motocicletas y Barcos.</h3>
 				</div>
-				<div class="div line-between"></div>
-				<div class="column is-12-mobible is-6-tablet is-5-desktop">
+				<div class="column is-12-mobile is-table-6 is-5-desktop">
 					<h3>Registrarse</h3>
-					<form key="2" action="" class="register-form" v-if="activetab === 2">
+					<form key="2" action="" class="-saleregister-form" v-if="activetab === 2">
         				<div class="field">
 							<label class="label" for="username">Usuario</label>
 							<div class="control">
@@ -140,6 +99,20 @@
 							<button class="button is-primary">
 								Iniciar Sesión
 							</button>
+						</div>
+						<hr>
+						<div class="other-options">
+							<h5>Iniciar sesión con...</h5>
+							<div class="buttons">
+								<a href="#" class="facebook-btn">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<a href="#" class="google-btn">
+	        						<img src="/img/google.svg" alt="">
+									Google
+								</a>
+							</div>
 						</div>
         			</form>
 				</div>

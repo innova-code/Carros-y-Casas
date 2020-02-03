@@ -53,15 +53,15 @@
 		<div id="sale" class="container is-fluid section">
 			<div class="columns is-vcentered">
 				<div class="column is-12-mobile is-table-6 is-7-desktop text-center">
-					<h1>Nuestra plataforma a tu disposición</h1>
-					<h3>¿Es usted una persona particular o tiene una empresa?</h3>
-					<h3>Registrate y publica tus artículos totalmente gratis y conectar al instante con miles de compradores interesados en hacer negocios contigo.</h3>
-					<h2>¿Qué puedes vender?</h2>
-					<h3>Carros, Casas, Motocicletas y Barcos.</h3>
+					<h1 class="text-white">Nuestra plataforma a tu disposición</h1>
+					<h3 class="text-white">¿Es usted una persona particular o tiene una empresa?</h3>
+					<h3 class="text-white">Registrate y publica tus artículos totalmente gratis y conectar al instante con miles de compradores interesados en hacer negocios contigo.</h3>
+					<h2 class="text-white">¿Qué puedes vender?</h2>
+					<h3 class="text-white">Carros, Casas, Motocicletas y Barcos.</h3>
 				</div>
 				<div class="column is-12-mobile is-table-6 is-5-desktop">
-					<h3>Registrarse</h3>
-					<form key="2" action="" class="-saleregister-form" v-if="activetab === 2">
+					<form action="" class="sale-register-form">
+						<h3 class="text-white">Registrarse</h3>
         				<div class="field">
 							<label class="label" for="username">Usuario</label>
 							<div class="control">
@@ -86,6 +86,15 @@
 						    	<input class="input" id="confirme-password" type="password" placeholder="Contraseña">
 							</div>
 						</div>
+						<div class="field">
+							<label class="label" for="confirme-password">Seleccionar Role</label>
+							<div class="select">
+						    	<select>
+						    		<option>Personal</option>
+						    		<option>Empresarial</option>
+							    </select>
+							</div>
+						</div>
 						<div class="buttons">
 							<div class="control">
 							    <label class="checkbox">
@@ -95,13 +104,13 @@
 							</div>
 						</div>
 						<div class="field btn-register">
-							<button class="button is-primary">
-								Iniciar Sesión
+							<button class="button is-second">
+								Registrarse
 							</button>
 						</div>
 						<hr>
 						<div class="other-options">
-							<h5>Iniciar sesión con...</h5>
+							<h5>Registrarse con...</h5>
 							<div class="buttons">
 								<a href="#" class="facebook-btn">
 									<i class="fab fa-facebook-f"></i>

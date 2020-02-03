@@ -96,6 +96,15 @@ hr {
   .button.is-primary:hover {
     background-color: #006DB4; }
 
+.button.is-primary.outline {
+  border: 2px solid #007CCC;
+  color: #007CCC;
+  transition: all .4s ease-in;
+  background-color: transparent; }
+  .button.is-primary.outline:hover {
+    background-color: #007CCC;
+    color: #FFF; }
+
 .button.is-second {
   background-color: #E6B112;
   transition: all .4s ease-in;
@@ -381,9 +390,11 @@ hr {
       width: 49%;
       display: inline-block;
       margin-left: auto; }
-  .box-sidebar .promotion {
-    margin-bottom: 30px;
-    border-radius: 5px; }
+  .box-sidebar .advanced-search {
+    display: block;
+    margin-bottom: 15px; }
+  .box-sidebar .box-advanced-search {
+    margin-bottom: 15px; }
   .box-sidebar .change-role {
     padding: 20px 10px;
     background-color: #007CCC;
@@ -425,11 +436,11 @@ hr {
       .filter-content .filter-form .radio-group .radio-control:focus + span {
         color: #fff; }
 
-.products-content.grid {
+.products-content.grid-view {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px; }
-  .products-content.grid .prod-link {
+  .products-content.grid-view .prod-link {
     box-shadow: 0 2px 6px #AAA;
     border-radius: 5px;
     flex: 0 0 24%;
@@ -437,22 +448,55 @@ hr {
     transition: all .4s ease-in-out;
     color: #000;
     width: 100%; }
-  .products-content.grid .car-prod {
+  .products-content.grid-view .car-prod {
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 3px 6px #AAA; }
-    .products-content.grid .car-prod .img-prod {
+    box-shadow: 0 3px 6px #AAA;
+    transition: all 1s ease; }
+    .products-content.grid-view .car-prod .img-prod {
       border-radius: 5px;
       overflow: hidden; }
-    .products-content.grid .car-prod .content-info {
+    .products-content.grid-view .car-prod .content-info {
       padding: 10px; }
-      .products-content.grid .car-prod .content-info .prod-title {
+      .products-content.grid-view .car-prod .content-info .prod-title {
         margin-bottom: 5px;
         font-size: 21px; }
-      .products-content.grid .car-prod .content-info p {
+      .products-content.grid-view .car-prod .content-info p {
         margin: 0;
         color: #555;
         font-size: 14px; }
+  .products-content.grid-view * {
+    transition: all 1s ease; }
+
+.products-content.list-view {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+  .products-content.list-view .prod-link {
+    margin-bottom: 20px;
+    color: #222; }
+  .products-content.list-view .car-prod {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #AAA; }
+    .products-content.list-view .car-prod .prod-title {
+      margin-bottom: 10px;
+      font-size: 30px; }
+    .products-content.list-view .car-prod p {
+      margin-bottom: 5px;
+      color: #555;
+      font-size: 16px; }
+    .products-content.list-view .car-prod .img-prod {
+      flex: 0 0 33.33%; }
+    .products-content.list-view .car-prod .content-info {
+      padding: 30px;
+      flex: 1 0 auto; }
+  .products-content.list-view * {
+    transition: all 1s ease; }
 
 .pagination-content {
   margin-top: 30px;
@@ -615,6 +659,78 @@ hr {
   flex: 1 0 60%; }
 
 /****** Contact End ******/
+/****** Sale ******/
+#sale .columns.is-vcentered::before {
+  content: "";
+  background-color: #071336;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  z-index: -1; }
+#sale h1 {
+  font-size: 42px;
+  margin-bottom: 15px; }
+#sale h2 {
+  font-size: 32px;
+  margin-bottom: 15px; }
+#sale h3 {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 10px; }
+
+.sale-register-form {
+  padding: 30px 20px;
+  background-color: #007CCC;
+  box-shadow: 0 0 8px #007CCC;
+  border-radius: 5px; }
+  .sale-register-form h3 {
+    margin-bottom: 15px; }
+  .sale-register-form .label, .sale-register-form .checkbox {
+    color: #FFF; }
+  .sale-register-form select, .sale-register-form .select {
+    width: 100%; }
+  .sale-register-form .checkbox a {
+    color: #E6B112; }
+  .sale-register-form .btn-register {
+    margin-top: 30px; }
+    .sale-register-form .btn-register button,
+    .sale-register-form .btn-register button {
+      display: block;
+      width: 100%; }
+  .sale-register-form .buttons {
+    justify-content: space-between; }
+    .sale-register-form .buttons .forgot-btn {
+      color: #222;
+      transition: all .3s ease-in-out; }
+      .sale-register-form .buttons .forgot-btn:hover {
+        color: #007CCC; }
+  .sale-register-form .other-options h5 {
+    margin-bottom: 15px;
+    color: #FFF; }
+  .sale-register-form .other-options .facebook-btn,
+  .sale-register-form .other-options .google-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 35%;
+    flex: 0 0 35%;
+    text-align: center;
+    transition: all .3s ease-in-out; }
+  .sale-register-form .other-options .facebook-btn {
+    background-color: #3B5998;
+    color: #FFF; }
+    .sale-register-form .other-options .facebook-btn:hover {
+      background-color: #2e4575; }
+  .sale-register-form .other-options .google-btn {
+    border: 1px solid #427add;
+    color: #222;
+    background-color: #FFF; }
+    .sale-register-form .other-options .google-btn:hover {
+      background-color: #F2F2F2; }
+    .sale-register-form .other-options .google-btn img {
+      width: 15%; }
+
+/****** Sale End ******/
 /****** Login and Register ******/
 #form-section {
   padding: 30px 0; }
@@ -642,6 +758,8 @@ hr {
   .register-form .btn-register button {
     display: block;
     width: 100%; }
+.register-form select, .register-form .select {
+  width: 100%; }
 
 .login-form .buttons {
   justify-content: space-between; }

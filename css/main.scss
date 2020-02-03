@@ -385,8 +385,6 @@ hr {
 	.prod-link{
 		box-shadow: 0 2px 6px #AAA;
 		border-radius: 5px;
-		flex: 0 0 24%;
-		width: 24%;
 	    transition: all .4s ease-in-out;
 	    color: #000;
 	    width: 100%;
@@ -417,8 +415,6 @@ hr {
 	.company-link{
 		box-shadow: 0 2px 6px #AAA;
 		border-radius: 5px;
-		flex: 0 0 24%;
-		width: 24%;
 	    transition: all .4s ease-in-out;
 	    color: #000;
 	    width: 100%;
@@ -588,8 +584,6 @@ hr {
     .prod-link{
 		box-shadow: 0 2px 6px #AAA;
 		border-radius: 5px;
-		flex: 0 0 24%;
-		width: 24%;
 	    transition: all .4s ease-in-out;
 	    color: #000;
 	    width: 100%;
@@ -661,49 +655,10 @@ hr {
         transition: all 1s ease;
     }
 }
-.pagination-content {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-	.inner-pagination {
-	    flex: 0 0 auto;
-	    .pagination-previous, .pagination-next {
-		    border: 0;
-		    transition: all .3s ease-in;
-		    &:hover, &:focus{
-		    	color: #FFF;
-			    background-color: #007CCC;
-		    }
-		}
-	    .pagination-previous {
-		    margin-right: 15px;
-		}
-
-		.pagination-next {
-		    margin-left: 15px;
-		}
-		.pagination-link {
-		    border: 0;
-		    box-shadow: 0 2px 6px #AAA;
-		    transition: all .3s ease-in;
-		    &:hover, &:focus{
-		    	color: #FFF;
-			    background-color: #007CCC;
-		    }
-		    &.active{
-		    	color: #FFF;
-			    background-color: #007CCC;
-		    }
-		}
-	}
-}
-
 
 /****** Cars End ******/
 
-/****** Compannies ******/
+/****** Companies ******/
 
 .company-hero {
 	min-height: 50vh;
@@ -790,7 +745,46 @@ hr {
 	}
 }
 
-/****** Compannies End ******/
+/****** Companies Inner ******/
+
+.company {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 30px 10px;
+    .comp-link{
+		box-shadow: 0 2px 6px #AAA;
+		border-radius: 5px;
+	    transition: all .4s ease-in-out;
+	    color: #000;
+	    width: 100%;
+	}
+	.car-comp {
+	    border-radius: 5px;
+	    overflow: hidden;
+	    box-shadow: 0 3px 6px #AAA;
+        transition: all 1s ease;
+
+	    .img-comp {
+		    border-radius: 5px;
+		    overflow: hidden;
+		}
+		.content-info {
+		    padding: 10px;
+			.comp-title {
+			    margin-bottom: 5px;
+			    font-size: 21px;
+			}
+			p {
+			    margin-bottom: 5px;
+			    color: #555;
+			}
+		}
+	}
+}
+/****** Companies Inner End******/
+
+/****** Companies End ******/
 
 /****** Contact ******/
 

@@ -19,3 +19,15 @@ const product = new Vue({
 		}
 	}
 })
+
+const profile = new Vue({
+	el: '#profile-content',
+	data: {
+		profileForm: false
+	},
+	methods: {
+		showProfileForm() {
+			this.profileForm = !this.profileForm
+		}
+	}
+})

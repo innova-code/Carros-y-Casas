@@ -192,6 +192,18 @@ hr {
         color: #FFF;
         background-color: #007CCC; }
 
+.change-role {
+  padding: 20px 10px;
+  background-color: #007CCC;
+  border-radius: 5px; }
+  .change-role h4, .change-role p {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 10px; }
+  .change-role a {
+    display: block;
+    margin-top: 20px; }
+
 /****** Global Class End ******/
 /****** Header ******/
 #topbar {
@@ -391,17 +403,6 @@ hr {
     margin-bottom: 15px; }
   .box-sidebar .box-advanced-search {
     margin-bottom: 15px; }
-  .box-sidebar .change-role {
-    padding: 20px 10px;
-    background-color: #007CCC;
-    border-radius: 5px; }
-    .box-sidebar .change-role h4, .box-sidebar .change-role p {
-      text-align: center;
-      color: #FFF;
-      margin-bottom: 10px; }
-    .box-sidebar .change-role a {
-      display: block;
-      margin-top: 20px; }
 
 .filter-content .filter-form {
   display: flex;
@@ -726,6 +727,98 @@ hr {
       width: 15%; }
 
 /****** Sale End ******/
+/****** Profile Page ******/
+#profile-content .box-content {
+  margin: 60px 30px 60px 0;
+  padding: 20px;
+  box-shadow: 0 1px 12px #AAA;
+  border-radius: 5px; }
+  #profile-content .box-content .filter-form {
+    justify-content: flex-end; }
+  #profile-content .box-content .profile-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px; }
+    #profile-content .box-content .profile-content .prod-link {
+      box-shadow: 0 2px 6px #AAA;
+      border-radius: 5px;
+      transition: all .4s ease-in-out;
+      color: #000;
+      width: 100%; }
+    #profile-content .box-content .profile-content .car-prod {
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px #AAA;
+      transition: all 1s ease; }
+      #profile-content .box-content .profile-content .car-prod .img-prod {
+        border-radius: 5px;
+        overflow: hidden; }
+      #profile-content .box-content .profile-content .car-prod .content-info {
+        padding: 10px; }
+        #profile-content .box-content .profile-content .car-prod .content-info .prod-title {
+          margin-bottom: 5px;
+          font-size: 21px; }
+        #profile-content .box-content .profile-content .car-prod .content-info p {
+          margin: 0;
+          color: #555;
+          font-size: 14px; }
+
+.profile-sidebar {
+  margin: 60px 30px;
+  box-shadow: 0 1px 12px #AAA;
+  border-radius: 5px;
+  padding: 20px; }
+  .profile-sidebar .profile-box .profile-header {
+    margin-bottom: 20px; }
+    .profile-sidebar .profile-box .profile-header .code-id {
+      font-weight: 500;
+      margin-bottom: 5px; }
+    .profile-sidebar .profile-box .profile-header .profile-img {
+      position: relative;
+      margin-bottom: 5px; }
+      .profile-sidebar .profile-box .profile-header .profile-img figcaption {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFF;
+        text-shadow: 0 1px 6px #000;
+        font-family: 'Lato', sans-serif; }
+    .profile-sidebar .profile-box .profile-header h3 {
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500; }
+  .profile-sidebar .box-buttons {
+    margin-bottom: 30px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px #AAA;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative; }
+    .profile-sidebar .box-buttons a, .profile-sidebar .box-buttons button {
+      width: 100%; }
+    .profile-sidebar .box-buttons .profile-contact-form {
+      margin-top: 20px; }
+  .profile-sidebar .contact-info {
+    margin-bottom: 30px; }
+    .profile-sidebar .contact-info span {
+      font-weight: 700; }
+    .profile-sidebar .contact-info hr {
+      margin: 15px 0px; }
+    .profile-sidebar .contact-info a {
+      color: #222;
+      font-weight: 500;
+      transition: all .4s ease-in-out; }
+      .profile-sidebar .contact-info a:hover {
+        color: #007CCC; }
+  .profile-sidebar .fade-enter-active, .profile-sidebar .fade-leave-active {
+    transition: opacity .5s; }
+  .profile-sidebar .fade-enter, .profile-sidebar .fade-leave-to {
+    opacity: 0; }
+
+/****** Profile Page End ******/
 /****** Login and Register ******/
 #form-section {
   padding: 30px 0; }

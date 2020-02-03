@@ -432,6 +432,9 @@ hr {
         background-color: #007CCC; }
       .filter-content .filter-form .radio-group .radio-control:focus + span {
         color: #fff; }
+  .filter-content .filter-form .select {
+    display: flex;
+    align-items: center; }
 
 .products-content.grid-view {
   display: grid;

@@ -110,7 +110,7 @@ hr {
 /****** Global Class ******/
 .button.is-white{
 	background-color: #FFF;
-	transition: all .4s ease-in;
+	transition: all .3s ease-in;
 	&:hover{
 		background-color: #F2F2F2;
 	}
@@ -118,7 +118,7 @@ hr {
 
 .button.is-primary{
 	background-color: #007CCC;
-	transition: all .4s ease-in;
+	transition: all .3s ease-in;
 	&:hover{
 		background-color: #006DB4;
 	}
@@ -127,7 +127,7 @@ hr {
 .button.is-primary.outline{
 	border: 2px solid #007CCC;
 	color: #007CCC;
-	transition: all .4s ease-in;
+	transition: all .3s ease-in;
 	background-color: transparent;
 	&:hover{
 		background-color: #007CCC;
@@ -137,7 +137,7 @@ hr {
 
 .button.is-second{
 	background-color: #E6B112;
-	transition: all .4s ease-in;
+	transition: all .3s ease-in;
 	border: 0;
 	color: #FFF;
 	&:hover{
@@ -146,18 +146,67 @@ hr {
 }
 .button.is-third{
 	background-color: #007CCC;
-	transition: all .4s ease-in;
+	transition: all .3s ease-in;
 	&:hover{
 		background-color: #006DB4;
 	}
 }
-// .button.is-primary{
-// 	background-color: #007CCC;
-// 	transition: all .4s ease-in;
-// 	&:hover{
-// 		background-color: #006DB4;
-// 	}
-// }
+
+.button.is-edited{
+	background-color: #007CCC;
+	transition: all .3s ease-in;
+	color: #FFF;
+	&:hover{
+		background-color: #006DB4;
+	}
+}
+.button.is-edited.outline{
+	border: 2px solid #007CCC;
+	color: #007CCC;
+	transition: all .3s ease-in;
+	background-color: transparent;
+	&:hover{
+		background-color: #007CCC;
+		color: #FFF;
+	}
+}
+
+.button.is-deleted{
+	background-color: #D9534E;
+	transition: all .3s ease-in;
+	&:hover{
+		background-color: #B92C27;
+	}
+}
+.button.is-deleted.outline{
+	border: 2px solid #D9534E;
+	color: #D9534E;
+	transition: all .3s ease-in;
+	background-color: transparent;
+	&:hover{
+		background-color: #D9534E;
+		color: #FFF;
+	}
+}
+
+.button.is-recovery{
+	background-color: #5CB85C;
+	transition: all .3s ease-in;
+	color: #FFF;
+	&:hover{
+		background-color: #399839;
+	}
+}
+
+.button.is-pending{
+	background-color: #6C757D;
+	transition: all .3s ease-in;
+	color: #FFF;
+	&:hover{
+		background-color: #5B6268;
+	}
+}
+
 .text-center{
 	text-align: center;
 }
@@ -400,7 +449,7 @@ hr {
 	.prod-link{
 		box-shadow: 0 2px 6px #AAA;
 		border-radius: 5px;
-	    transition: all .4s ease-in-out;
+	    transition: all .3s ease-in-out;
 	    color: #000;
 	    width: 100%;
 	}
@@ -430,7 +479,7 @@ hr {
 	.company-link{
 		box-shadow: 0 2px 6px #AAA;
 		border-radius: 5px;
-	    transition: all .4s ease-in-out;
+	    transition: all .3s ease-in-out;
 	    color: #000;
 	    width: 100%;
 	}
@@ -587,7 +636,7 @@ hr {
     .prod-link{
 		box-shadow: 0 2px 6px #AAA;
 		border-radius: 5px;
-	    transition: all .4s ease-in-out;
+	    transition: all .3s ease-in-out;
 	    color: #000;
 	    width: 100%;
 	}
@@ -627,6 +676,7 @@ hr {
     .prod-link {
 	    margin-bottom: 20px;
 	    color: #222;
+	    width: 100%;
 	}
 
 	.car-prod {
@@ -647,6 +697,16 @@ hr {
 		}
 	    .img-prod {
 	        flex: 0 0 33.33%;
+	        position: relative;
+	        padding: 12%;
+	        overflow: hidden;
+	        img{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: auto;
+			    height: 100%;
+			}
 	    }
 	    .content-info {
 	        padding: 30px;
@@ -758,7 +818,7 @@ hr {
     .comp-link{
 		box-shadow: 0 2px 6px #AAA;
 		border-radius: 5px;
-	    transition: all .4s ease-in-out;
+	    transition: all .3s ease-in-out;
 	    color: #000;
 	    width: 100%;
 	}
@@ -976,52 +1036,7 @@ hr {
 /****** Sale End ******/
 
 /****** Profile Page ******/
-#profile-content {
-	.box-content {
-	    margin: 60px 30px 60px 0;
-	    padding: 20px;
-	    box-shadow: 0 1px 12px #AAA;
-	    border-radius: 5px;
-	    .filter-form {
-	    	justify-content: flex-end;
-	    }
-	    .profile-content {
-		    display: grid;
-		    grid-template-columns: repeat(4, 1fr);
-		    grid-gap: 30px;
-		    .prod-link{
-				box-shadow: 0 2px 6px #AAA;
-				border-radius: 5px;
-			    transition: all .4s ease-in-out;
-			    color: #000;
-			    width: 100%;
-			}
-			.car-prod {
-			    border-radius: 5px;
-			    overflow: hidden;
-			    box-shadow: 0 3px 6px #AAA;
-		        transition: all 1s ease;
 
-			    .img-prod {
-				    border-radius: 5px;
-				    overflow: hidden;
-				}
-				.content-info {
-				    padding: 10px;
-					.prod-title {
-					    margin-bottom: 5px;
-					    font-size: 21px;
-					}
-					p {
-					    margin: 0;
-					    color: #555;
-					    font-size: 14px;
-					}
-				}
-			}
-		}
-	}
-}
 .profile-sidebar {
     margin: 60px 30px;
     box-shadow: 0 1px 12px #AAA;
@@ -1081,7 +1096,7 @@ hr {
 	    a {
 	        color: #222;
 	        font-weight: 500;
-	        transition: all .4s ease-in-out;
+	        transition: all .3s ease-in-out;
 	        &:hover {
 	            color: #007CCC;
 	        }
@@ -1092,6 +1107,197 @@ hr {
 	}
 	.fade-enter, .fade-leave-to {
 		opacity: 0;
+	}
+}
+
+#profile-content {
+	.box-content {
+	    margin: 60px 30px 60px 0;
+	    padding: 20px;
+	    box-shadow: 0 1px 12px #AAA;
+	    border-radius: 5px;
+	    .filter-form {
+	    	justify-content: flex-end;
+	    }
+	    .profile-content {
+		    display: grid;
+		    grid-template-columns: repeat(4, 1fr);
+		    grid-gap: 30px;
+		    .prod-link{
+				box-shadow: 0 2px 6px #AAA;
+				border-radius: 5px;
+			    transition: all .3s ease-in-out;
+			    color: #000;
+			    width: 100%;
+			}
+			.car-prod {
+			    border-radius: 5px;
+			    overflow: hidden;
+			    box-shadow: 0 3px 6px #AAA;
+		        transition: all 1s ease;
+
+			    .img-prod {
+				    border-radius: 5px;
+				    overflow: hidden;
+				}
+				.content-info {
+				    padding: 10px;
+					.prod-title {
+					    margin-bottom: 5px;
+					    font-size: 21px;
+					}
+					p {
+					    margin: 0;
+					    color: #555;
+					    font-size: 14px;
+					}
+				}
+			}
+			&.profile-admin {
+			    display: flex;
+			    flex-flow: column wrap;
+			    .car-prod {
+				    display: flex;
+				    align-items: center;
+				    flex-flow: row;
+				    border-radius: 5px;
+				    overflow: hidden;
+				    box-shadow: 0 2px 6px #AAA;
+				    .prod-title {
+					    margin-bottom: 10px;
+					    font-size: 30px;
+					}
+					p {
+					    margin-bottom: 5px;
+					    color: #555;
+					    font-size: 16px;
+					}
+				    .img-prod {
+				        flex: 0 0 33.33%;
+				        position: relative;
+				        padding: 15%;
+				        img{
+						    position: absolute;
+						    top: 0;
+						    left: 0;
+						    width: auto;
+						    height: 100%;
+						    z-index: 9999;
+						}
+				    }
+				    .content-info {
+				        padding: 30px;
+				        flex: 1 0 auto;
+				    }
+				    .admin-buttons {
+					    padding: 30px;
+					    display: flex;
+					    flex-flow: column wrap;
+					    align-self: flex-end;
+					}
+				}
+			}
+		}
+	}
+	.form-content {
+		padding: 60px 30px;
+		.tabs-lists {
+		    display: flex;
+		    align-items: baseline;
+		    justify-content: space-between;
+		    // margin-bottom: 30px;
+		    border-top-left-radius: 5px;
+		    border-top-right-radius: 5px;
+		    overflow: hidden;
+		    .tab-link {
+			    flex: 1;
+			    text-align: center;
+			    border-radius: 5px;
+			    a {
+				    display: block;
+				    padding: 20px;
+				    font-size: 18px;
+				    font-weight: 500;
+				    border-radius: 0;
+				    transition: all .3s ease-in-out;
+				    color: #222;
+				    background-color: #F2F2F2;
+				    position: relative;
+					&.active,
+					&:hover{
+					    color: #007CCC;
+					    background-color: #FFF;
+					    border-top: 5px solid #007CCC;
+						font-weight: 700;
+					}
+					// &.active:before {
+					//     content: "";
+					//     border-top: 5px solid #007CCC;
+					//     width: 100%;
+					//     height: 5px;
+					//     z-index: 1;
+					//     display: inline-block;
+					//     position: absolute;
+					//     top: 0;
+					//     left: 0;
+					// }
+				}
+			}
+		}
+		.tabs-content {
+		    padding: 20px;
+		    border-bottom-left-radius: 5px;
+		    border-bottom-right-radius: 5px;
+		    box-shadow: 0 3px 10px #AAA;
+		    .form-detail {
+			    display: flex;
+			    flex-flow: row wrap;
+			    justify-content: space-between;
+			    align-items: flex-start;
+				> .field, 
+				> .double-field, 
+				.double-field .field {
+				    flex: 0 0 48%;
+				}
+
+				.field .select, 
+				.field select {
+				    width: 100%;
+				}
+
+				.double-field {
+				    display: flex;
+				    justify-content: space-between;
+				    flex-flow: row wrap;
+				}
+
+				.field-description {
+				    flex: 0 0 100%;
+					textarea {
+					    resize: none;
+					}
+				}
+			}
+		}
+		.fade-left-enter-active {
+          transition: all 0.3s ease-in-out .7s;
+        }
+
+        .fade-left-leave-active {
+          transition: all 0.3s ease-in-out .3s;
+        }
+
+        .fade-left-enter {
+          height: 0;
+          transform: translateX(30px);
+          opacity: 0;
+        }
+
+        .fade-left-leave-to {
+          height: 0;
+          transform: translateX(30px);
+          opacity: 0;
+        }
 	}
 }
 

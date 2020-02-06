@@ -21,7 +21,7 @@ const product = new Vue({
 })
 
 const profile = new Vue({
-	el: '#profile-content',
+	el: '#profile-admin-sidebar',
 	data: {
 		profileForm: false
 	},
@@ -29,5 +29,12 @@ const profile = new Vue({
 		showProfileForm() {
 			this.profileForm = !this.profileForm
 		}
+	}
+})
+
+const publish = new Vue({
+	el: '#form-publish',
+	data: {
+		activetab: 2
 	}
 })

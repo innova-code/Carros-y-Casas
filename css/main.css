@@ -964,6 +964,78 @@ hr {
         flex: 0 0 100%; }
         #profile-content .form-content .tabs-content .form-detail .field-description textarea {
           resize: none; }
+    #profile-content .form-content .tabs-content .feature .check-content input {
+      position: absolute;
+      opacity: 0; }
+    #profile-content .form-content .tabs-content .feature .check-content label.checkbox::before {
+      content: "";
+      display: inline-block;
+      padding: 8px;
+      border-radius: 2px;
+      vertical-align: middle;
+      transition: all .3s ease-in;
+      box-shadow: 0 0 3px #AAA;
+      margin-right: 5px; }
+    #profile-content .form-content .tabs-content .feature .check-content input:checked + .checkbox::after {
+      content: "\f00c";
+      display: inline-block;
+      font-weight: 700;
+      font-family: "Font Awesome 5 Pro";
+      position: absolute;
+      right: 0px;
+      left: 2px;
+      top: 0px;
+      color: #009541; }
+    #profile-content .form-content .tabs-content .feature .check-content input:checked + label.checkbox::before {
+      background-color: #F2F2F2; }
+    #profile-content .form-content .tabs-content .feature .security-checkboxes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px; }
+    #profile-content .form-content .tabs-content .feature .security, #profile-content .form-content .tabs-content .feature .confort, #profile-content .form-content .tabs-content .feature .audio {
+      margin-bottom: 30px; }
+    #profile-content .form-content .tabs-content .feature h3 {
+      margin-bottom: 15px; }
+    #profile-content .form-content .tabs-content .other-features h5 {
+      margin-bottom: 10px; }
+    #profile-content .form-content .tabs-content .other-features .new-feature {
+      display: flex;
+      justify-content: flex-start; }
+      #profile-content .form-content .tabs-content .other-features .new-feature .field {
+        flex: 0 0 35%;
+        margin-right: 30px; }
+        #profile-content .form-content .tabs-content .other-features .new-feature .field .control {
+          margin-bottom: 10px; }
+        #profile-content .form-content .tabs-content .other-features .new-feature .field a.button.is-primary {
+          display: inline-block; }
+      #profile-content .form-content .tabs-content .other-features .new-feature .feature-list {
+        flex: 1; }
+        #profile-content .form-content .tabs-content .other-features .new-feature .feature-list ul {
+          list-style: disc;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 5px; }
+        #profile-content .form-content .tabs-content .other-features .new-feature .feature-list .delete-feture {
+          color: #222;
+          margin-left: 10px;
+          display: inline-block;
+          transition: all .3s ease-in;
+          font-size: 18px; }
+          #profile-content .form-content .tabs-content .other-features .new-feature .feature-list .delete-feture:hover {
+            color: #F80000; }
+    #profile-content .form-content .tabs-content .pubish-direction {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      #profile-content .form-content .tabs-content .pubish-direction .fields {
+        flex: 0 0 48%; }
+      #profile-content .form-content .tabs-content .pubish-direction .select, #profile-content .form-content .tabs-content .pubish-direction select {
+        width: 100%; }
+      #profile-content .form-content .tabs-content .pubish-direction .map {
+        flex: 0 0 48%; }
+      #profile-content .form-content .tabs-content .pubish-direction button.button.is-primary {
+        margin-left: auto;
+        margin-top: 20px; }
   #profile-content .form-content .fade-left-enter-active {
     transition: all 0.3s ease-in-out .7s; }
   #profile-content .form-content .fade-left-leave-active {
